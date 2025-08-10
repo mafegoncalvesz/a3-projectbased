@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for  # Web framework
 from flask_socketio import SocketIO, emit, join_room, leave_room  # Real-time WebSocket communication
-import sqlite3      # Database for storing users and messages
+import sqlite3      # simple database for storing users and messages
 import hashlib      # For password hashing
 import pika         # RabbitMQ client (same as original CLI chat)
 import threading    # For background tasks
@@ -156,7 +156,7 @@ def login():
         if not username or not password:
             return jsonify({'success': False, 'message': 'Username and password required'})
         
-        # Check credentials against database
+        # Check credentials 
         user = get_user(username)
         hashed_password = hashlib.md5(password.encode()).hexdigest()
         
