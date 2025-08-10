@@ -1,0 +1,22 @@
+@echo off
+cd /d "%~dp0"
+echo.
+echo ==========================================
+echo   MSN-Style Web Chat Application v1.0
+echo ==========================================
+echo.
+echo Installing required Python packages...
+pip install -r requirements.txt
+echo.
+echo Starting web server...
+echo.
+echo Access your chat at: http://localhost:5000
+echo.
+echo Test users available:
+echo - alice / password123
+echo - bob / password123
+echo - carol / password123
+echo.
+echo [Press CTRL+C to stop the server]
+echo.
+python app.py
