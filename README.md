@@ -29,13 +29,12 @@ Quick Start
 
 Clone/Download the project files to your local machine
 Start RabbitMQ Server
-bash# Double-click: 01_start_rabbitmq.bat
-# OR manually run:
+
+# manually run:
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 
 Launch Web Application
-bash# Double-click: 04_run_web_chat.bat
-# OR manually run:
+# manually run:
 pip install -r requirements.txt
 python app.py
 
