@@ -13,7 +13,7 @@ A3-projectbased
 ├── app.py                            # Flask backend server
 ├── chat_app.py                       # Original CLI chat application
 ├── requirements.txt                  # Python dependencies
-├── chat.db                          # SQLite database (auto-generated)
+├── chat.db                          # SQLite database (auto-generated)- It will be created after running the applicatioon in the browser
 └── README.md                        # This documentation
 
 ##Installation & Setup
@@ -25,20 +25,20 @@ Python 3.8+ with pip
 Docker Desktop (running)
 Internet connection (for initial setup)
 
-Quick Start
+Quick Start:
 
-Clone/Download the project files to your local machine
+1. Clone/Download the project files to your local machine
 Start RabbitMQ Server
 
-# manually run:
+2. # manually run:
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management ( In the terminal-powershell)
 
-Launch Web Application
+3. Launch Web Application
 # manually run:
 pip install -r requirements.txt (split the terminal)
 python app.py
 
-Access the Chat
+4. Access the Chat
 
 Open browser to: http://localhost:5000
 Login with test credentials (see below)
