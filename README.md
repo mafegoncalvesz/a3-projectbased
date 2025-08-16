@@ -31,11 +31,11 @@ Clone/Download the project files to your local machine
 Start RabbitMQ Server
 
 # manually run:
-docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management ( In the terminal-powershell)
 
 Launch Web Application
 # manually run:
-pip install -r requirements.txt
+pip install -r requirements.txt (split the terminal)
 python app.py
 
 Access the Chat
